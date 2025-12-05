@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daniël — Projects</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  color:#fff;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(81,35,141,0.55), transparent 8%),
+              radial-gradient(900px 500px at 90% 90%, rgba(0,176,255,0.18), transparent 12%),
+              linear-gradient(180deg,#0b0325 0%, #071226 100%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px 24px;
+  position:relative;
+}
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  padding:32px;
+  backdrop-filter: blur(10px) saturate(130%);
+  max-width:800px;
+  text-align:left;
+}
+h3{font-weight:700;font-size:24px;margin-bottom:16px;color:rgba(255,255,255,0.8);}
+.project{margin-bottom:20px;}
+.project h4{margin:0 0 6px 0;font-size:18px;}
+.project p{margin:0;font-size:14px;color:rgba(255,255,255,0.85);}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px;}
+.tag{padding:4px 8px;border-radius:8px;font-size:12px;background:rgba(0,255,128,0.2); border:1px solid rgba(0,255,128,0.5); color:#0f0;}
+.btns a{
+  display:inline-block;
+  margin:6px 12px 0 0;
+  padding:8px 16px;
+  border-radius:12px;
+  border:1px solid rgba(0,255,128,0.7);
+  color:#0f0;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.2s;
+}
+.btns a:hover{
+  background:rgba(0,255,128,0.15);
+  box-shadow:0 0 12px #0f0, 0 0 24px #0ff;
+}
+
+/* Techy Nav */
+.tech-nav {
+  position: fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:18px;
+  padding:12px 20px;
+  background: rgba(0,0,0,0.4);
+  border:1px solid rgba(0,255,128,0.7);
+  border-radius:12px;
+  backdrop-filter: blur(8px);
+  z-index:1000;
+  font-family:'Inter',sans-serif;
+  transition: top 0.3s;
+}
+.tech-nav a {color:#0f0; text-decoration:none; font-weight:600; transition:0.2s; position:relative;}
+.tech-nav a::after {content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:linear-gradient(90deg,#0f0,#0ff); transition: width 0.2s;}
+.tech-nav a:hover::after {width:100%;}
+.tech-nav a:hover {color:#0f0; text-shadow:0 0 8px #0f0,0 0 16px #0ff;}
+.project-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(0,255,128,0.7);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0,255,128,0.2);
+}
+
+.project-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #0f0;
+}
+
+.project-card p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: rgba(255,255,255,0.85);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0f0;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.view-btn:hover {
+  background: linear-gradient(90deg, #0f0, #0ff);
+  color: #000;
+  box-shadow: 0 0 12px #0f0, 0 0 24px #0ff;
+}
+</style>
+</head>
+<body>
+<nav class="tech-nav" id="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="cv.html">CV</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="card">
+<h2>Projects</h2>
+
+<h3>HTML, CSS and JavaScript</h3>
+<div class="project-card">
+  <div class="project-info">
+    <h4>Diabetic Website</h4>
+    <p><strong>Year:</strong> 2025</p>
+    <p>Personal website I made to spread awareness about Type 1 Diabetes and provide help to people that need it.</p>
+    <p><strong>Tech:</strong> HTML & CSS</p>
+    <a href="https://www.insulinvibe.co.za" target="_blank" class="view-btn">View Project</a>
+  </div>
+</div>
+
+<h3>Java</h3>
+<div class="project-card">
+  <div class="project-info">
+    <h4>Library Management System </h4>
+    <p><strong>Year:</strong> 2025</p>
+    <p>A system designed to manage the inventory of a library.</p>
+    <p><strong>Tech:</strong> Java</p>
+    <a href="FA1KM02.zip" download class="view-btn">Download Project</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-info">
+    <h4>Library System</h4>
+    <p><strong>Year:</strong> 2025</p>
+    <p>A system to view books that are available.</p>
+    <p><strong>Tech:</strong> Java</p>
+    <a href="FA2KMO2.zip" download class="view-btn">Download Project</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="project-info">
+    <h4>Music Store App</h4>
+    <p><strong>Year:</strong> 2025</p>
+    <p>An application created to help a music store keep track of their inventory.</p>
+    <p><strong>Tech:</strong> Java, Swing</p>
+    <a href="MusicStoreApp.zip" download class="view-btn">Download Project</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  navbar.style.top = (prevScrollPos > currentScrollPos) ? "20px" : "-80px";
+  prevScrollPos = currentScrollPos;
+};
+</script>
+</body>
+</html>

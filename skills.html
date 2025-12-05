@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Daniël — Skills</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:Inter,system-ui,sans-serif;
+  color:#fff;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(81,35,141,0.55), transparent 8%),
+              radial-gradient(900px 500px at 90% 90%, rgba(0,176,255,0.18), transparent 12%),
+              linear-gradient(180deg,#0b0325 0%, #071226 100%);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:80px 24px;
+  position:relative;
+}
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  padding:32px;
+  backdrop-filter: blur(10px) saturate(130%);
+  max-width:700px;
+  text-align:left;
+}
+
+h2{
+  font-weight:700;
+  font-size:24px;
+  margin-bottom:24px;
+  color:rgba(255,255,255,0.8);
+}
+
+/* Skill bars */
+.skill{margin-bottom:20px;}
+.skill-label{display:flex;justify-content:space-between;font-size:14px;font-weight:600;margin-bottom:6px;}
+.skill-bar{height:12px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(0,255,128,0.5); overflow:hidden;}
+.skill-bar-inner{height:100%;border-radius:8px;background:linear-gradient(90deg,#0f0,#0ff);width:0%;transition:width 1s;}
+
+/* Soft skills section */
+.soft-skills{
+  margin-top:32px;
+}
+.soft-skills h3{
+  font-size:18px;
+  margin-bottom:12px;
+  color:rgba(255,255,255,0.75);
+}
+.soft-skills ul{
+  padding-left:20px;
+  margin-top:0;
+  line-height:1.6;
+  font-size:14px;
+}
+
+/* Tools section */
+.tools{
+  margin-top:32px;
+}
+.tools h3{
+  font-size:18px;
+  margin-bottom:12px;
+  color:rgba(255,255,255,0.75);
+}
+.tools ul{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  list-style:none;
+  padding-left:0;
+}
+.tools li{
+  background:rgba(0,255,128,0.1);
+  padding:6px 12px;
+  border-radius:12px;
+  font-size:14px;
+  border:1px solid rgba(0,255,128,0.5);
+}
+
+/* Techy Nav */
+.tech-nav {
+  position: fixed;
+  top:20px;
+  left:50%;
+  transform:translateX(-50%);
+  display:flex;
+  gap:18px;
+  padding:12px 20px;
+  background: rgba(0,0,0,0.4);
+  border:1px solid rgba(0,255,128,0.7);
+  border-radius:12px;
+  backdrop-filter: blur(8px);
+  z-index:1000;
+  font-family:'Inter',sans-serif;
+  transition: top 0.3s;
+}
+.tech-nav a {color:#0f0; text-decoration:none; font-weight:600; transition:0.2s; position:relative;}
+.tech-nav a::after {content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:linear-gradient(90deg,#0f0,#0ff); transition: width 0.2s;}
+.tech-nav a:hover::after {width:100%;}
+.tech-nav a:hover {color:#0f0; text-shadow:0 0 8px #0f0,0 0 16px #0ff;}
+</style>
+</head>
+<body>
+<nav class="tech-nav" id="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="cv.html">CV</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="card">
+<h2>Skills</h2>
+
+<!-- Technical Skills -->
+<div class="skill">
+  <div class="skill-label"><span>HTML</span><span>100%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:100%"></div></div>
+</div>
+<div class="skill">
+  <div class="skill-label"><span>CSS</span><span>100%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:100%"></div></div>
+</div>
+<div class="skill">
+  <div class="skill-label"><span>JavaScript</span><span>100%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:100%"></div></div>
+</div>
+<div class="skill">
+  <div class="skill-label"><span>Python</span><span>95%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:95%"></div></div>
+</div>
+<div class="skill">
+  <div class="skill-label"><span>Java</span><span>90%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:90%"></div></div>
+</div>
+<div class="skill">
+  <div class="skill-label"><span>C#</span><span>10%</span></div>
+  <div class="skill-bar"><div class="skill-bar-inner" style="width:10%"></div></div>
+</div>
+
+<!-- Soft Skills -->
+<div class="soft-skills">
+  <h3>Soft Skills</h3>
+  <ul>
+    <li>Team Collaboration</li>
+    <li>Problem Solving</li>
+    <li>Time Management</li>
+    <li>Communication</li>
+  </ul>
+</div>
+
+<!-- Tools -->
+<div class="tools">
+  <h3>Tools & Technologies</h3>
+  <ul>
+    <li>VS Code</li>
+    <li>GitHub</li>
+    <li>Webpack</li>
+    <li>Docker</li>
+    <li>Firebase</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("navbar");
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  navbar.style.top = (prevScrollPos > currentScrollPos) ? "20px" : "-80px";
+  prevScrollPos = currentScrollPos;
+};
+</script>
+</body>
+</html>
